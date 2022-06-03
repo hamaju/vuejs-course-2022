@@ -20,8 +20,8 @@ export default {
     },
   },
   watch: {
-    didAutoLogout(curValue, oldValue) {
-      if (curValue && curValue !== oldValue) {
+    didAutoLogout(value, oldValue) {
+      if (value && value !== oldValue) {
         this.$router.replace('/coaches');
       }
     },
